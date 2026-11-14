@@ -114,7 +114,7 @@
       <h2>안녕하세요! 👋</h2>
       <p>
         Selamat datang di aplikasi pembelajaran Bahasa Korea.
-        Mari belajar dari dasar hingga siap menghadapi EPS-TOPIK.
+        Mari belajar dari dasar hingga siap menghadapi P TO P WELDER/SHIPBUILDING.
       </p>
     </section>
 
@@ -146,6 +146,46 @@
       </div>
     </section>
   </main>
+
+  .nav{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  width:100%;
+  background:white;
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0 calc(10px + env(safe-area-inset-bottom));
+  box-shadow:0 -3px 15px #00000012;
+  z-index:1000;
+}
+
+.nav button{
+  background:none;
+  border:0;
+  color:#64748b;
+  font-size:10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  flex:1 1 20%;
+  width:20%;
+  min-width:0;
+  padding:5px 0;
+  white-space:nowrap;
+}
+
+.nav button span{
+  font-size:20px;
+}
+
+.nav button.active{
+  color:#D62828;
+  font-weight:bold;
+}
 
   <footer>
     © 2026 LPK Globaltech Wonosobo
